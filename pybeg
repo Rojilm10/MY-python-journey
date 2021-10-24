@@ -1,0 +1,10 @@
+# string program
+def input_word(word):
+    k=word
+    return k
+
+
+input_word= print(input('what is your word:'))
+
+print(input_word)
+print(type(input_word))
