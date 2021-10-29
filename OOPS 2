@@ -1,0 +1,128 @@
+OOPS 1
+class Students:
+    
+
+    def name(self):
+
+
+        print("Roji")
+    def roll(self):
+        print('awd')
+    def Char(self):
+        print("food")
+d=Students()
+d.name()
+
+**************************************OOPS 2 ******************************
+
+class Students:
+    def __init__(self, name, roll):
+        self.name = name
+        self.roll = roll
+
+    def my_name(self):
+        return self.name
+    def my_roll(self):
+        return self.roll
+   # def Char(self):
+       # print("food")
+d = Students("roji", 55)
+print(d.my_name())
+print(d.my_roll())class Students:
+    def __init__(self, name, roll):
+        self.name = name
+        self.roll = roll
+
+    def my_name(self):
+        return self.name
+    def my_roll(self):
+        return self.roll
+   # def Char(self):
+       # print("food")
+d = Students("roji", 55)
+print(d.my_name())
+print(d.my_roll())
+**********************************OOPS 3************************************************
+class Students:
+    def __init__(self, name, roll):
+        self.name = name
+        self.roll = roll
+    def my_name(self):
+        return self.name
+    def my_roll(self):
+        return self.roll
+    def change_roll(self,roll):
+        self.roll=roll
+
+d = Students("tt",56)
+
+d.change_roll(33)
+print(d.my_roll())
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@OOPS 4@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ INHERITANCE
+class Pet:
+    def __init__(self, name, age):
+        self.name=name
+        self.age=age
+    def show(self):
+        print(f"I am{self.name} and I am {self.age} years old")
+class Cat(Pet):
+    def speak(self):
+        print("Meow")
+class Dog(Pet):
+    def speak(self):
+        print("Meow")
+a= Pet("tim", 19)
+a.show()
+c=Cat('Tom', 99)
+c.speak()
+######################################OOPS ############################################Inheritance
+class Pet:
+    def __init__(self, name, age):
+        self.name=name
+        self.age=age
+    def show(self):
+        print(f"I am{self.name} and I am {self.age} years old")
+    def other(self):
+        print("fjfjjfjfkid")
+class Cat(Pet):
+    def speak(self):
+        print("Meow")
+class Dog(Pet):
+    def speak(self):
+        print("Meow")
+class Fish(Pet):
+    pass
+a= Pet("tim", 19)
+a.show()
+c=Cat('Tom', 99)
+c.speak()
+d=Fish("ff",98)
+d.other()
+########################################OOPs Super Class++++++++++++++++++++++++++++++++
+class Pet:
+    def __init__(self, name, age):
+        self.name=name
+        self.age=age
+    def show(self):
+        print(f"I am{self.name} and I am {self.age} years old")
+    def other(self):
+        print("fjfjjfjfkid")
+class Cat(Pet):
+    def __init__(self,name,color,age):
+        super().__init__(name,age)
+        self.color=color
+    def show(self):
+        print(f"I am{self.name} and I am {self.age} years old I am {self.color}")
+    def speak(self):
+        print("Meow")
+class Dog(Pet):
+    def speak(self):
+        print("Meow")
+class Fish(Pet):
+    pass
+a= Pet("tim", 19)
+a.show()
+c=Cat('Tom', 99, "har")
+c.show()
+d=Fish("ff",98)
+d.show()
