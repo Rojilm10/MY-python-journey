@@ -1,0 +1,13 @@
+class Students:
+    
+
+    def name(self):
+
+
+        print("Roji")
+    def roll(self):
+        print('awd')
+    def Char(self):
+        print("food")
+d=Students()
+d.name()
